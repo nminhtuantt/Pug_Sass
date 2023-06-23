@@ -1,0 +1,135 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='reset.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Prata&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./main.css')
+.wrapper
+  header.header
+    .header__top
+      .container
+        img(srcset='./images/logo.png 2x' alt='heling')
+        ul.menu
+          li.menu__item
+            a.menu__link(href='#!') Home
+          li.menu__item
+            a.menu__link(href='#!') Projects
+          li.menu__item
+            a.menu__link(href='#!') Designers
+          li.menu__item
+            a.menu__link(href='#!') Articles
+        a.header__contact.font-heading(href='#!') Contact
+        button.menu__toggle
+          span.line.line-first
+          span.line.line-second
+    img(srcset='./images/header-line.png 2x' alt='')
+    .container
+      .header__main
+        .header__content
+          h1.header__heading.font-heading
+            | We make
+            span
+              span.header__heading-child We 
+              | every room
+            span
+              span.header-heading-child We 
+              | a unique
+              |                                 shape
+          .header__info
+            img(srcset='./images/header-line2.png 2x')
+            p.header__text
+              | Lorem ipsum onsectetur adipiscing elit. Blandit mauris etiam
+              | faucibus laoreet tellus nam. Gravida solor aenean orci,
+              | facilisis senectus.
+        .header__images
+          img.header__img-large(srcset='./images/img1.png 2x' alt='')
+          img.header-img-small(srcset='./images/img2.png 2x' alt='')
+  main
+    section.about
+      .container
+        .about__header
+          h2.about__heading.g-heading.font-heading Our remember-able stories
+          p.g-text.about__desc
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit
+            | mauris etiam faucibus laoreet vestibulum pretium tellus nam.
+            | Gravida aenean orci, facilisis senectus.
+        .about__content
+          .about__left
+            img(srcset='./images/img3.png 2x' alt='')
+          .about__right
+            img(srcset='./images/img4.png 2x' alt='')
+            img(srcset='./images/line3.png 2x' alt='')
+            h3.font-heading.about__caption We don&rsquo;t renovate space, we transform them
+    img(srcset='./images/line4.png 2x' alt='')
+    section.project
+      .container
+        .project__header
+          h2.font-heading.g-heading.project__heading Our latest projects
+          a.project-all.g-link.font-heading(href='#!') All projects
+      .project__list
+        .project__item
+          .project__image
+            img(src='https://source.unsplash.com/random' alt='')
+          .project__info
+            h3.project__name Dining Room
+            a.project__link.g-link.font-heading(href='#') View Details
+    section.designer
+      .container
+        .designer__main
+          .designer__content
+            h2.g-heading.font-heading.designer__heading Our designers
+            p.g-text.designer__desc
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Blandit mauris etiam faucibus laoreet vestibulum
+            p.g-text.designer__desc
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Blandit mauris etiam faucibus laoreet vestibulum nam. Gravida
+              | aenean orci, facilisis senectus.
+            a.g-link.designer__link(href='#') See All Designers
+          .designer__image
+            img(srcset='./images/img5.png 2x' alt='')
+    section.blog
+      .container
+        .blog__header
+          h2.g-heading.font-heading.blog__heading Our latest articles
+          a.g-link.blog-view(href='#') Read All Articles
+        .blog__list
+          .blog__item
+            .blog__image
+              img(srcset='./images/img6.png 2x' alt='')
+            h3.blog__title.font-heading Why your client needs interior design
+            .blog__meta
+              a.g-link.blog__link(href='#') Read More
+              time.blog__time April 30, 2020
+          .blog__item
+            .blog__image
+              img(srcset='./images/img6.png 2x' alt='')
+            h3.blog__title.font-heading Why your client needs interior design
+            .blog__meta
+              a.g-link.blog__link(href='#') Read More
+              time.blog__time April 30, 2020
+  footer.footer
+    .container
+      a.footer__back-to-top.g-link(href='#top')
+        img(src='./images/img-up.svg' alt='')
+        span Go to the top
+      .footer__main
+        .footer__content
+          h3.font-heading.footer__heading Stay in touch with us
+          .footer__info
+            span.footer__infotext-dot DM us on:
+            h4.footer__info-item.font-heading hello@heling.com
+          .footer__info
+            span.footer__infotext-dot Call us on:
+            h4.footer__info-item.font-heading +2(930) 859-464
+        .footer__image
+          img(srcset='./images/img7.png 2x' alt='')
+      .footer__bottom
+        span &copy;Heling 2021.
+        img.footer__logo(srcset='./images/logo.png 2x' alt='')
+        span Privacy Policy
